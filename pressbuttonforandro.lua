@@ -15,7 +15,7 @@ ScreenGui.Parent = CoreGui
 ScreenGui.ResetOnSpawn = false
 
 local MainBtn = Instance.new("ImageButton")
-MainBtn.Name = "F4Button"
+MainBtn.Name = "KButton"
 MainBtn.Parent = ScreenGui
 MainBtn.Size = UDim2.new(0, 55, 0, 55)
 MainBtn.Position = UDim2.new(0.1, 0, 0.5, 0)
@@ -80,7 +80,8 @@ MainBtn.MouseButton1Click:Connect(function()
     shrink.Completed:Wait()
     expand:Play()
 
-    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.F4, false, game)
+    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.K, false, game)
     task.wait(0.05)
-    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.F4, false, game)
+    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.K, false, game)
+
 end)
